@@ -1,41 +1,58 @@
 <template>
   <v-app>
     <v-app-bar app color="#25242f" dark elevation="0">
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      <div class="d-flex align-center ml-md-6">
+        <h3>Neteng.io</h3>
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn href="#" target="_blank" text>
+        <span class="mr-2">H<span class="text-lowercase">ome</span></span>
+      </v-btn>
+      <v-btn href="#" target="_blank" text>
+        <span class="mr-2">S<span class="text-lowercase">ervces</span></span>
+      </v-btn>
+      <v-btn href="#" target="_blank" text>
+        <span class="mr-2">P<span class="text-lowercase">rojects</span></span>
+      </v-btn>
+      <v-btn href="#" target="_blank" text>
+        <span class="mr-2"
+          >A<span class="text-lowercase">bout</span> U<span
+            class="text-lowercase"
+            >s</span
+          ></span
+        >
       </v-btn>
     </v-app-bar>
 
     <v-main>
       <HelloWorld />
     </v-main>
+    <v-footer padless color="#25242f" dark>
+      <v-row
+        justify="center"
+        no-gutters
+        class="d-flex align-center justify-space-between mx-4"
+      >
+        <h3 class="ml-3">
+          neteng.io
+        </h3>
+
+        <div>
+          <v-btn
+            v-for="link in links"
+            :key="link"
+            color="white"
+            text
+            rounded
+            class="my-2"
+          >
+            {{ link }}
+          </v-btn>
+        </div>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
@@ -50,7 +67,7 @@ export default {
   },
 
   data: () => ({
-    //
+    links: ["Service", "Project", "About Us"],
   }),
 };
 </script>

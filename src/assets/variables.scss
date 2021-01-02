@@ -1,0 +1,50 @@
+$body-font-family: 'Peace Sans';
+$body-font-family-2: 'Poppins';
+
+.v-application {
+
+    .text-md-h2 {
+        font-family: $body-font-family !important;
+    }
+    .text-md-h3 {
+        font-family: $body-font-family !important;
+    }
+    .text-md-h5{
+        font-family: $body-font-family !important;
+    }
+
+    p {
+        font-family: $body-font-family-2 !important;
+    }
+
+    .text-md-h6 {
+        font-family: $body-font-family-2 !important;
+    }
+
+    .text-caption {
+        font-family: $body-font-family-2 !important;
+    }
+
+    .v-btn {
+        text-transform: none;
+        font-family: $body-font-family-2 !important;
+    }
+
+    h3 {
+        font-family: $body-font-family-2 !important;
+    }
+
+
+    @media (min-width: 600px) {
+        .test {
+            position: relative;
+            top: -34px;
+            left: 350px;
+
+        }
+      
+    }
+
+
+
+}
